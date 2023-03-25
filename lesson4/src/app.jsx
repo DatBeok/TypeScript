@@ -1,20 +1,25 @@
-import { useState } from "react";
+// import { useState } from "react";
+import Broad from "./componens/broad";
+import Square from "./componens/square";
 // import Avatar from "./componens/avatar";
 
 // Props: Là một đối tượng, truyền dữ liệu từ cha xuống con
 // Props: Immuatable
 
 const App = function () {
-  const [count, setCount] = useState(0);
-  const handleIncrease = () => {
-    setCount(count + 1);
-  };
   return (
     <div className="h-[100vh] flex justify-center items-center">
-      count:{count}
-      <button className="border bg-red-400" onClick={handleIncrease}>
-        Increase
-      </button>
+      <Broad>
+        <Square />
+        <Square />
+        <Square />
+        <Square />
+        <Square />
+        <Square />
+        <Square />
+        <Square />
+        <Square />
+      </Broad>
     </div>
   );
 };
