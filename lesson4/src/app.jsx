@@ -1,7 +1,8 @@
-// import { useState } from "react";
+import { useState } from "react";
 import Broad from "./componens/broad";
-// import Square from "./componens/square";
-// import Avatar from "./componens/avatar";
+import Counter from "./componens/counter";
+import Square from "./componens/square";
+import Avatar from "./componens/avatar";
 
 // Props: Là một đối tượng, truyền dữ liệu từ cha xuống con
 // Props: Immuatable
@@ -9,9 +10,7 @@ import Broad from "./componens/broad";
 const App = function () {
   return (
     <div className="h-[100vh] flex justify-center items-center">
-      <Broad>
-
-      </Broad>
+     <Broad/>
     </div>
   );
 };
